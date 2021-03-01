@@ -1,0 +1,8 @@
+img {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    border-radius: 100px;
+    -webkit-border-radius: 170px;
+    float: left;
+}
