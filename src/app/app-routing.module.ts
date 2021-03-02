@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'cart', component: CartComponent },
   { path: 'products', component: ProductsComponent },
-  { path: 'common', component: CommonComponent },
+  //{ path: 'common', component: CommonComponent },
 ]; // sets up routes constant where you define your routes
 
 // configures NgModule imports and exports

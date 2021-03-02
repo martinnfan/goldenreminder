@@ -1,5 +1,6 @@
-body, html {
+body {
     height: 100%;
+    background-image: url("../../assets/images/background.jpg");
   }
   
   .bg {
@@ -15,6 +16,8 @@ body, html {
     background-size: cover;
   }
 
+
+
 title {
     text-align: left;
     color: white;
@@ -25,12 +28,40 @@ h1 {
     color: white;
 }
 
-l1 {
-    size: 100%;
-}
-
 .container{
     background-image: url(/assets/images/background.jpg);
+}
+
+/* Top Bar Component */
+.topbar {
+  background-color: #8BCAC7;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.topbar2 {
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+
+a {
+  color: white;
+  font-family: "Courier New";
+  font-size: 300%;
+  padding: 30px 30px 30px 30px;
+}
+
+button {
+  height:0%; 
+  width:0%; 
+  margin: 0px;
+  position: relative;
+  top: 0%; 
+  left: 0%;
+  color: black;
 }
 
 /* Style all font awesome icons */

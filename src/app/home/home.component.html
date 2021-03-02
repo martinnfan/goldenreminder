@@ -1,38 +1,8 @@
 <div style="height: 100vh;">  
-    <!-- Search form -->
-
-    <div class="searchbar" style="position: relative;">
-      <a mat-button routerLink="/home">Golden Reminders</a>
-      <div id="sb-search" class="sb-search">
-        <form>
-          <input class="sb-search-input" placeholder="Search..." type="text" value="" name="search" id="search" />
-          <input class="sb-search-submit" type="submit" value="" />
-          <span class="sb-icon-search"></span>
-        </form>
-      </div>
-    </div>
-    <mat-sidenav-container fxFlexFill class="example-container">
-  
-      <div fxShow="true" fxHide.lt-md="true">
-        <a mat-button routerLink="/home">Home</a>
-        <a mat-button routerLink="/products">Product</a>
-        <a mat-button routerLink="/cart">Cart</a>
-      </div>
-  
-    </mat-sidenav-container>
-
-    <!--Background Image-->
-    <head>
-        <style>
-            body {
-                background-image: url("assets/images/background.jpg");
-            }
-        </style>
-    </head>
-
     <body>
+      
       <!-- Slider: https://stackblitz.com/edit/ng-image-slider-demo-->
-      <div style="width: 1700px; height: 400px; text-align:center; margin:0px; padding:50px;">
+      <div style="width: 1900px; height: 400px; text-align:center; margin:0px; padding:50px;">
         <ng-image-slider #nav
           [images]="imageObject"
           [infinite]="true"
@@ -42,39 +12,23 @@
         </ng-image-slider>
       </div>
 
-      <h1>⋆ Custom Handmade Jewelry by @_melz.w</h1>
-      <h1>⋆ $2.50 shipping fee for Canadian orders</h1>
-      <h1>Golden stories stamped for a golden you ✨</h1>
-      <h1>Currently: Open!</h1>
-      
-      <!--Use this to align the stuff.
-        https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
-        also answer:
-        https://stackoverflow.com/questions/38972405/angular-material-how-to-position-text-next-to-image-->
-      <div flex layout="column" flex layout-padding layout-align="center right">
-          <img src="assets/images/pic1.jpeg">
-        <div layout="row" layout-align="center">
-                  <div layout="column" flex="center">
-                      <h3>Lorem ipsum dolor sit amet!</h3>
-                      <p>Lorem ipsum dolor sit amet....</p>
-                  </div>
-              </div>
-              <div layout="row" layout-align="center start">
-                  <div layout="column" flex="80">
-                      <h3>Lorem ipsum dolor</h3>
-                      <p>Lorem ipsum dolor sit amet...</p>
-                  </div>
-  
-              </div>
-              <div layout="row" layout-align="center center">
-                  <div layout="column" flex="80">
-                      <h3>Lorem ipsum dolor</h3>
-                      <p>Lorem ipsum dolor sit amet...</p>
-                  </div>
-              </div>
+      <div>
+        <h1>⋆ Custom Handmade Jewelry by @_melz.w</h1>
+        <h1>⋆ $3 shipping fee for Canadian orders</h1>
+        <h1>Golden stories stamped for a golden you ✨</h1>
+        <h1>Currently: Open!</h1>
       </div>
+      
+      <div>
+          <img src="assets/images/pic1.jpeg">
+      </div>
+      <div>
+        <h2>Hi I'm Melissa Wu And I make Jewelry</h2>
+        <p>Follow me on Instagram!</p>
+      </div>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <a href="https://www.instagram.com/goldenreminders.co/" class="fa fa-instagram"></a>
     </body>
-
-
-
+  
   </div>

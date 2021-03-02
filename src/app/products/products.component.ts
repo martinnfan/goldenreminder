@@ -10,7 +10,6 @@ export class ProductsComponent implements OnInit {
 
   item:item[];
   empSelected:Number;
-
   modifiedtext:string;
 
   imageObject = [

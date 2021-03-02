@@ -1,7 +1,20 @@
+/* Text stuff */
 h1 {
-    text-align:center;
+    text-align: center;
+    color: black;
+    font-family: "Courier New";
 }
 
+h2 {
+  color: white;
+  margin-top: 150px;
+}
+
+p {
+  color:white;
+}
+
+/* Portrait Stuff */
 img {
     width: 350px;
     height: 350px;
@@ -9,50 +22,30 @@ img {
     border-radius: 100px;
     -webkit-border-radius: 170px;
     float: left;
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 10%;
+    margin-top: 10px;
 }
 
-.portrait {
-    height: 400px;
-    width: 500px;
-    position: absolute;
-    left: 150px;
+body{
+  position: relative;
+  background-image: url("../../assets/images/toronto_bg_cropped.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  border-radius: 150px;
 }
 
-.landscape {
-    height: 30px;
-    width: 80px;
-}
-
-.square {
-    height: 75px;
-    width: 75px;
-}
-
-/* Search bar */
-.searchbar {
-  background-color: #8BCAC7;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.sb-search {
-  float: right;
-  overflow: hidden;
-}
-
-.sb-search-input {
-  border: none;
-  outline: none;
-  background: #fff;
-  width: 100%;
-  height: 60px;
-  margin: 0;
-  z-index: 10;
-  padding: 20px 65px 20px 20px;
-  font-family: inherit;
-  font-size: 20px;
-  color: #2c3e50;
+button {
+  height:0%; 
+  width:0%; 
+  margin: 0px;
+  position: relative;
+  top: 0%; 
+  left: 0%;
+  color: black;
 }
 
 /* IMAGE SLIDER */
@@ -149,4 +142,35 @@ img {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* Style all font awesome icons */
+
+.fa {
+  padding: 0px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 200%;
+  float: left;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.8;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #3B5998;
+  color: white;
 }

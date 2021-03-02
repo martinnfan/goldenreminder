@@ -1,67 +1,9 @@
 <div style="height: 100vh;">
-
-    <mat-toolbar color="primary">
-  
-      <a mat-button routerLink="/home">Golden Reminders</a>
-  
-      <span class="example-spacer"></span>
-  
-    <!-- Search form -->
-    <form class="form-inline md-form mr-auto mb-4">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button mdbBtn size="sm" color="warning" outline="true" rounded="true" class="my-0 waves-light"
-        mdbWavesEffect type="submit">Search</button>
-    </form>
-    </mat-toolbar>
-  
-    <mat-sidenav-container fxFlexFill class="example-container">
-  
-      <div fxShow="true" fxHide.lt-md="true">
-        <a mat-button routerLink="/home">Home</a>
-        <a mat-button routerLink="/products">Product</a>
-        <a mat-button routerLink="/cart">Cart</a>
-      </div>
-  
-    </mat-sidenav-container>
-
-    <head>
-      <style>
-          body {
-              background-image: url("assets/images/background.jpg");
-          }
-      </style>
-    </head>
+  <html>
 
     <body>
-      <!-- Slider: https://stackblitz.com/edit/ng-image-slider-demo-->
-      <div style="width: 1700px; height: 300px; text-align:center; margin:0px; padding:50px;">
-        <ng-image-slider #nav
-          [images]="imageObject"
-          [infinite]="false"
-          [autoSlide]="1"
-          [imageSize]="{width: '25%', height: 300}"
-          slideImage="1">
-        </ng-image-slider>
-      </div>
-      
-      <!-- Drop down menu for items picked-->
-
-      <div flex layout="column" flex layout-padding layout-align="center right">
-        <img src="assets/images/pic10.jpeg">
-      <div layout="row" style="margin: auto;width: 25%; height: 50px">
-        <select [(ngModel)]="empSelected" (ngModelChange)='onItemSelected($event)'>
-          <option *ngFor="let it of item" [value]="it.Name">
-            {{it.Name}}
-          </option>
-        </select>
-        <br>
-        <br>
-        {{modifiedtext}}
-      </div>
-      </div>
-
-
       <button mat-button routerLink="/cart">Continue to Cart</button>
     </body>
-  
+
+    </html>
   </div>

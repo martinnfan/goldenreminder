@@ -4,8 +4,20 @@
 }
 
 img {
-    width: 350px;
-    height: 350px;
-    position: absolute;
-    right: 75%;
+    width: 1500px;
+    height: 1000px;
+    position: relative;
+    margin-left: 200px;
+    border-radius: 170px;
+    opacity: 0.3;
 }
+
+body {
+    background-image: url("../../assets/images/toronto_bg_cropped.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+  }
+  
