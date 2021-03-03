@@ -1,8 +1,13 @@
 <div style="height: 100vh;">  
     <body>
-      
-      <!-- Slider: https://stackblitz.com/edit/ng-image-slider-demo-->
-      <div style="width: 1900px; height: 400px; text-align:center; margin:0px; padding:50px;">
+
+      <div class="landscape1">
+        <a routerLink="/products" class="btn effect01" target="_blank"><span>Shop Now</span></a>
+      </div>
+
+      <div class="bg">
+        <!-- Slider: https://stackblitz.com/edit/ng-image-slider-demo-->
+      <div class="slideShow">
         <ng-image-slider #nav
           [images]="imageObject"
           [infinite]="true"
@@ -20,7 +25,7 @@
       </div>
       
       <div>
-          <img src="assets/images/pic1.jpeg">
+          <img src="assets/images/pic1.jpeg" width="350px" height="350px">
       </div>
       <div>
         <h2>Hi I'm Melissa Wu And I make Jewelry</h2>
@@ -29,6 +34,7 @@
 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <a href="https://www.instagram.com/goldenreminders.co/" class="fa fa-instagram"></a>
+      </div>
     </body>
   
   </div>

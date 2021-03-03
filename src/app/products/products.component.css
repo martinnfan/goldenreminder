@@ -18,6 +18,17 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.3;
+    opacity: 1;
+    border-radius: 170px;
   }
-  
+
+  .bg{
+    height: 100%;
+    background-image: url("../../assets/images/toronto_bg_cropped.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    border-radius: 170px;
+  }

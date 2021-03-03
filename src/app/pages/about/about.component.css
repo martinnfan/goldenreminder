@@ -1,0 +1,21 @@
+img {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    border-radius: 100px;
+    -webkit-border-radius: 170px;
+    float: left;
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 10%;
+    margin-top: 10px;
+  }
+  
+.text {
+    text-align: center;
+    color: black;
+    font-family: "Arial";
+    font-size: large;
+    margin-top: 100px;
+    margin-right: 700px;
+}

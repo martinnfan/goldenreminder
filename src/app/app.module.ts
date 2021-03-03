@@ -21,6 +21,10 @@ import { ErrorComponent } from './error/error.component';
 import { SlideshowModule } from 'ng-simple-slideshow';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { TopBarComponent } from './shared/top-bar/top-bar.component';
+import { BottomBarComponent } from './shared/bottom-bar/bottom-bar.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +34,10 @@ import { NgImageSliderModule } from 'ng-image-slider';
     CartComponent,
     CommonComponent,
     ErrorComponent,
+    TopBarComponent,
+    BottomBarComponent,
+    ContactUsComponent,
+    AboutComponent,
 
     //AppRoutingModule
   ],
