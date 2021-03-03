@@ -6,3 +6,13 @@ img {
     -webkit-border-radius: 170px;
     float: left;
 }
+
+body {
+    background-image: url("../../assets/images/toronto_bg_cropped.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    border-radius: 170px;
+  }

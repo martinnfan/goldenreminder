@@ -4,12 +4,10 @@
 }
 
 img {
-    width: 1500px;
-    height: 1000px;
+    width: 400px;
+    height: 500px;
     position: relative;
     margin-left: 200px;
-    border-radius: 170px;
-    opacity: 0.3;
 }
 
 body {
@@ -32,3 +30,4 @@ body {
     opacity: 1;
     border-radius: 170px;
   }
+

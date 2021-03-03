@@ -25,6 +25,7 @@ import { TopBarComponent } from './shared/top-bar/top-bar.component';
 import { BottomBarComponent } from './shared/bottom-bar/bottom-bar.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { AboutComponent } from './pages/about/about.component';
+import { ItemsComponent } from './products/items/items.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { AboutComponent } from './pages/about/about.component';
     BottomBarComponent,
     ContactUsComponent,
     AboutComponent,
+    ItemsComponent,
 
     //AppRoutingModule
   ],

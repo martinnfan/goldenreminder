@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { item } from './item';
 
 @Component({
@@ -7,30 +8,13 @@ import { item } from './item';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
+  id: number;
 
   item:item[];
   empSelected:Number;
   modifiedtext:string;
 
-  imageObject = [
-    {image: "/assets/images/landscape/pic1.jpeg",
-      thumbImage:"/assets/images/landscape/pic1.jpeg",
-      title: "Pic1"},
-    {image: "/assets/images/landscape/pic2.jpeg",
-      thumbImage:"/assets/images/landscape/pic2.jpeg",
-      title: "Pic2"},
-    {image: "/assets/images/landscape/pic3.jpeg",
-      thumbImage:"/assets/images/landscape/pic3.jpeg",
-      title: "Pic3"},
-    {image: "/assets/images/landscape/pic4.jpeg",
-      thumbImage:"/assets/images/landscape/pic4.jpeg",
-      title: "Pic4"},
-    {image: "/assets/images/landscape/pic5.jpeg",
-      thumbImage:"/assets/images/landscape/pic5.jpeg",
-      title: "Pic5"},
-  ];
-
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.item =[

@@ -7,11 +7,17 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { ItemsComponent } from './products/items/items.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'cart', component: CartComponent },
-  { path: 'products', component: ProductsComponent },
+  { path: 'products', component: ProductsComponent, 
+    children: [
+      {
+        path: 'items', component: ItemsComponent,
+      }
+    ]},
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactUsComponent },
   //{ path: 'common', component: CommonComponent },
