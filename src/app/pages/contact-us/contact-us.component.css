@@ -3,3 +3,35 @@
     flex-direction: column;
     align-items: center;
   }
+
+.message {
+  width: 700px;
+  height: 300px;
+}
+
+.email {
+  width: 700px;
+  height: 50px;
+  padding-bottom: 30px;
+}
+
+.name {
+  padding-right: 100px;
+  width: 300px;
+}
+
+.phone {
+  width: 300px;
+}
+
+h1 {
+  padding-top: 75px;
+  padding-bottom: 25px;
+  font-size: 300%;
+  font-family: Cambria;
+  text-align: center;
+}
+
+h3 {
+  padding-bottom: 20px;
+}

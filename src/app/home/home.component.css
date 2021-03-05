@@ -5,40 +5,44 @@ h1 {
   font-family: "Courier New";
 }
 
-h2 {
-color: white;
-margin-top: 150px;
-}
-
-p {
-color:white;
+/* Bottom Photo */
+img {
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-radius: 100px;
+  -webkit-border-radius: 170px;
+  float: left;
+  margin: auto;
 }
 
 /* Landscaped photo */
 .landscape1 {
-height:70%;
-background-image: url("../../assets/images/landscape/pic1.jpeg");
-background-color: #cccccc;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-border-radius: 150px;
-position: relative;
+  height:70%;
+  background-image: url("../../assets/images/landscape/pic1.jpeg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 150px;
+  position: relative;
 }
 
 .btn {
-letter-spacing: 0.1em;
-cursor: pointer;
-font-size: 14px;
-font-weight: 400;
-line-height: 45px;
-max-width: 160px;
-position: absolute;
-text-decoration: none;
-text-transform: uppercase;
-width: 100%;
-margin-left: 47%;
-top: 300px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 140px;
+  position: absolute;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0 auto;
+  top: 300px;
+  display: block;
+  text-align: center;
 }
 .btn:hover {
 text-decoration: none;
@@ -55,7 +59,7 @@ position: relative;
 transition: all 0.3s ease-in-out;
 }
 .effect01:hover {
-border: 4px solid #666;
+border: 3px solid #666;
 background-color: #FFF;
 box-shadow:0px 0px 0px 4px #EEE inset;
 }
@@ -66,7 +70,7 @@ transition: all 0.2s ease-out;
 z-index: 2;
 }
 .effect01:hover span{
-letter-spacing: 0.13em;
+letter-spacing: 0.15em;
 color: #333;
 }
 
@@ -199,35 +203,4 @@ to {opacity: 1}
 @keyframes fade {
 from {opacity: .4}
 to {opacity: 1}
-}
-
-/* Style all font awesome icons */
-
-.fa {
-padding: 0px;
-font-size: 30px;
-width: 30px;
-text-align: center;
-text-decoration: none;
-border-radius: 200%;
-float: left;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-opacity: 0.8;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-background: #3B5998;
-color: white;
-}
-
-/* Instagram */
-.fa-instagram {
-background: #3B5998;
-color: white;
 }

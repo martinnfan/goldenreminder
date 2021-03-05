@@ -1,20 +1,29 @@
-<mat-form-field apperance="fill">
-    <mat-label>Name</mat-label>
-    <input matInput>
-</mat-form-field>
+<div>
+    <h1>Contact Us</h1>
+    <h3>Hi contact us with any issues that you may have!</h3>
+</div>
 
-<mat-form-field apperance="fill">
-    <mat-label>Phone Number</mat-label>
-    <input matInput>
-</mat-form-field>
+<div>
+    <mat-form-field class="example-full-width" class="name">
+      <input matInput placeholder="Name">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width" class="phone">
+      <input matInput placeholder="Phone Number">
+    </mat-form-field>
+  </div>
 
-<mat-form-field apperance="fill">
-    <mat-label>Email</mat-label>
-    <input matInput>
+<mat-form-field apperance="fill" class="email">
+    <input matInput placeholder="Email">
 </mat-form-field>
-
-<mat-form-field apperance="fill">
+  
+<mat-form-field appearance="fill" class="message">
     <mat-label>Message</mat-label>
-    <input matInput>
-</mat-form-field>
+    <textarea 
+        matInput
+        cdkTextareaAutosize
+        cdkAutosizeMinRows="10"
+        cdkAutosizeMaxRows="100">
+    </textarea>
+  </mat-form-field>
 

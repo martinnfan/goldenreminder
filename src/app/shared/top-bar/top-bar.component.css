@@ -16,17 +16,19 @@
   a {
     color: white;
     font-family: "Courier New";
-    font-size: 300%;
-    padding: 30px 30px 30px 30px;
+    font-size: 200%;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
   }
   
   button {
-    height:0%; 
-    width:0%; 
-    margin: 0px;
     position: relative;
-    top: 0%; 
-    left: 0%;
     color: black;
+    justify-content: left;
   }
   
+  b {
+    color: black;
+    display: flex;
+    position: relative;
+  }
