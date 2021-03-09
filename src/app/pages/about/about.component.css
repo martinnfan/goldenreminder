@@ -1,6 +1,6 @@
 img {
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 500px;
     background-size: cover;
     border-radius: 100px;
     -webkit-border-radius: 170px;
@@ -12,11 +12,9 @@ img {
   }
   
 .text {
-    text-align: left;
+    text-align: center;
     color: black;
     font-family: "Arial";
     font-size: large;
-    padding-top: 50px;
-    padding-left: 300px;
 }
 
