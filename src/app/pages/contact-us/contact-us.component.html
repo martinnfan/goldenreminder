@@ -1,29 +1,37 @@
-<div>
-    <h1>Contact Us</h1>
-    <h3>Hi contact us with any issues that you may have!</h3>
-</div>
 
-<div>
-    <mat-form-field class="example-full-width" class="name">
-      <input matInput placeholder="Name">
-    </mat-form-field>
-  
-    <mat-form-field class="example-full-width" class="phone">
-      <input matInput placeholder="Phone Number">
-    </mat-form-field>
+
+  <div>
+    <h1>Contact Us</h1>
+    <h3>If you have any issues, please contact us and let us know!</h3>
   </div>
 
-<mat-form-field apperance="fill" class="email">
-    <input matInput placeholder="Email">
-</mat-form-field>
-  
-<mat-form-field appearance="fill" class="message">
-    <mat-label>Message</mat-label>
-    <textarea 
-        matInput
-        cdkTextareaAutosize
-        cdkAutosizeMinRows="10"
-        cdkAutosizeMaxRows="100">
-    </textarea>
+      <div>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Name">
+        </mat-form-field>
+      </div>
+    <div>
+      <mat-form-field class="example-full-width" >
+        <input matInput placeholder="Phone Number">
+      </mat-form-field>
+    </div>
+
+  <mat-form-field apperance="fill" >
+      <input matInput placeholder="Email">
   </mat-form-field>
+    
+  <mat-form-field appearance="fill" >
+    <mat-label>Message</mat-label>
+      <textarea 
+          matInput
+          cdkTextareaAutosize
+          cdkAutosizeMinRows="10"
+          cdkAutosizeMaxRows="10">
+      </textarea>
+    </mat-form-field>
+
+  <div class="send">
+    <button mat-flat-button>Send</button>
+  </div>
+
 

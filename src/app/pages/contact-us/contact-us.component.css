@@ -16,12 +16,16 @@
 }
 
 .name {
-  padding-right: 100px;
+  padding-right: 75px;
   width: 300px;
 }
 
 .phone {
   width: 300px;
+}
+
+.send {
+  position: relative;
 }
 
 h1 {

@@ -1,9 +1,16 @@
-.contact {
+.footer {
     text-align: center;
-}
+    
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-.insta {
-    padding-left: 958px;
+    padding-bottom: 0.5rem;
+
+    font-size: 0.75rem;
+
+    
 }
 
 /* Style all font awesome icons */

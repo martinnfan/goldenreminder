@@ -5,13 +5,11 @@
     justify-content: center;
     position: relative;
   }
-  
-  .topbar2 {
-    display: flex;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-  }
+
+.right-side{
+  display: flex;
+  align-items: center;
+}
   
   a {
     color: white;
