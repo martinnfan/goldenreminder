@@ -23,6 +23,7 @@
     "@angular/router": "~10.2.0",
     "@material/top-app-bar": "^10.0.0",
     "bootstrap": "^4.6.0",
+    "i18n": "^0.13.2",
     "jquery": "^3.5.1",
     "ng-image-slider": "^2.6.4",
     "ng-mat-search-bar": "^10.0.0-beta.3",

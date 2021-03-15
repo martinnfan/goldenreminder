@@ -1,10 +1,22 @@
 <div style="height: 100vh;">
-  <html>
+  <html class="bg">
 
-    <div class="bg">
-      <button routerLink="/items">
+    <div class="container">
+      <button class="center" routerLink="/items">
         <img src="../../assets/images/pic1.jpeg">
       </button>
+    </div>
+
+    <div class="test">
+      <select [(ngModel)]="itSelected" (ngModelChange)='onItemSelected($event)'>
+        <option *ngFor="let it of item" [value]="it.Name">
+          {{ it.Name }}
+        </option>
+      </select>
+      <br>
+      {{modifiedtext}}
+      <br>
+      <button routerLink="/items">submit</button>
     </div>
 
     </html>

@@ -4,4 +4,5 @@ export class item
     public Name:string;
     public Price:Number;
     public Description:string;
+    public Image: string;
 }

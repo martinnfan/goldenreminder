@@ -30,4 +30,21 @@ body {
     opacity: 1;
     border-radius: 170px;
   }
+  
+  .center {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 150px;
+    margin: auto;
+    padding-top: 30px;
+  }
 
+  .test{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green; 
+    padding: 10px;
+  }
