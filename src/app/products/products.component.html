@@ -1,14 +1,8 @@
 <div style="height: 100vh;">
   <html class="bg">
 
-    <div class="container">
-      <button class="center" routerLink="/items">
-        <img src="../../assets/images/landscape/pic8.jpeg">
-      </button>
-    </div>
-
     <div class="test">
-      <select [(ngModel)]="itSelected" (ngModelChange)='onItemSelected($event)'>
+      <select>
         <option *ngFor="let it of item" [value]="it.Name">
           {{ it.Name }}
         </option>
@@ -16,10 +10,29 @@
       <br>
       {{modifiedtext}}
       <br>
+
       <button routerLink="/items">submit</button>
     </div>
+
+    <div class="container" *ngFor="let product of products">
+
+      <!-- FIX CSS BEFORE UNCOMMENTING
+      <button class="center" [routerLink]="['/items', product.id]">
+        <img [src]="product.image">
+      </button>
+      -->
+      <a [title]="product.name + ' details'" [routerLink]="['/items', product.id]">
+        {{ product.name }}
+      </a>
+
+      <p *ngIf="product.description">
+        Description: {{ product.description}}
+      </p>
+  
+    </div>
+  
 
     </html>
   </div>
 
-  <!-- ROUTING WITH INFORMATION -->
+
