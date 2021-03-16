@@ -4,7 +4,25 @@
 }
 
 img {
-    position: relative;
+  width: 425px;
+  height: 500px;
+  background-size: cover;
+  border-radius: 100px;
+  -webkit-border-radius: 170px;
+  float: left;
+}
+
+a {
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+  display: block;
+  
+}
+
+p {
+  text-align: center;
 }
 
 body {
@@ -49,4 +67,9 @@ body {
     position:relative;
     width: 10px;
     height: 10px;
+  }
+
+  .container {
+    position: relative;
+    
   }
