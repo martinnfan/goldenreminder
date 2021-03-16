@@ -8,6 +8,7 @@ import { ProductsComponent } from './products/products.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { ItemsComponent } from './products/items/items.component';
+import { ThankyouComponent } from './pages/thankyou/thankyou.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactUsComponent },
   { path: 'common', component: CommonComponent },
+  { path: 'thankyou', component: ThankyouComponent },
 ]; // sets up routes constant where you define your routes
 
 // configures NgModule imports and exports

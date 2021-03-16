@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 
 // Routing
@@ -27,6 +27,7 @@ import { BottomBarComponent } from './shared/bottom-bar/bottom-bar.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemsComponent } from './products/items/items.component';
+import { ThankyouComponent } from './pages/thankyou/thankyou.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { ItemsComponent } from './products/items/items.component';
     ContactUsComponent,
     AboutComponent,
     ItemsComponent,
+    ThankyouComponent,
 
     //AppRoutingModule
   ],
@@ -53,6 +55,7 @@ import { ItemsComponent } from './products/items/items.component';
     MaterialModule,
     SlideshowModule,
     NgImageSliderModule,
+    ReactiveFormsModule,
     //SlickCarouselModule,
     RouterModule.forRoot([
       { path: '**', component: ErrorComponent },

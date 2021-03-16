@@ -1,5 +1,32 @@
 <div style="height: 100vh;">  
 
-    <body></body>
-  
-  </div>
+      <div class="cart-item" *ngFor="let item of items">
+        <span>{{ item.name }} </span>
+        <span>{{ item.price | currency }}</span>
+      </div>
+      
+      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+
+        <div>
+          <label for="name">
+            Name
+          </label>
+          <input id="name" type="text" formControlName="name">
+        </div>
+      
+        <div>
+          <label for="address">
+            Address
+          </label>
+          <input id="address" type="text" formControlName="address">
+        </div>
+      
+        <div class="send">
+          <button mat-flat-button type="button" 
+          [routerLink]="['/thankyou']">Purchase</button>
+        </div>
+
+      </form>
+
+
+  </div>  
