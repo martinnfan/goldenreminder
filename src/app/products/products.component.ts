@@ -32,4 +32,13 @@ export class ProductsComponent implements OnInit {
     this.modifiedtext="You have selected " + val;
   }
 
+  tableData = this.products.reduce((acc, col, i) => {
+    if (i % 2 == 0) {
+        acc.push({column1: col});
+    } else {
+        acc[acc.length - 1].column2 = col;
+    }       
+    return acc;
+  }, []);
+
 }

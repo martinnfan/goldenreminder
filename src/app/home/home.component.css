@@ -16,6 +16,11 @@ img {
   margin: auto;
 }
 
+h2, h3 {
+  text-align: center;
+  margin: auto;
+}
+
 /* Landscaped photo */
 .landscape1 {
   height:70%;

@@ -2,7 +2,7 @@ export const products = [
         /* Necklaces: Id: 1-7
          Earrings: Id: 8-13 */
       { id: 1, 
-        name: "Circle Pendant", 
+        name: "Handmade and Customizable Circle Pendant Necklace, 18k Gold-Filled · Personalized Gift", 
         price: 42, 
         description: "14mm charm, 27mm chain",
         image: "../../assets/images/NECKLACES/Circle Pendant/circle_1.jpeg"},
@@ -36,6 +36,10 @@ export const products = [
         price:42, 
         description: "Customizable up to 2 letters, available in uppercase and lowercase letters",
         image: ""},
+      { id: 8,
+        name: "Handmade Circle Butterfly Pendant Necklace, 18k Gold-Filled · Personalized Gift",
+        price:42,
+        description: "A butterfly necklace to remind yourself that you will soar when you are unapologetically you!"}
 
 
       ]
