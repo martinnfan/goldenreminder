@@ -1,12 +1,12 @@
 
 
-<div class="description" *ngIf="product">
+<div class="description" *ngIf="necklace">
   <h2>Product Details</h2>
   
-  <img [src]="product.image">
-  <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4>
-  <p>{{ product.description }}</p>
+  <img [src]="necklace.image">
+  <h3>{{ necklace.name }}</h3>
+  <h4>{{ necklace.price | currency }}</h4>
+  <p>{{ necklace.description }}</p>
 
   <button mat-flat-button (click)="addToCart(product)">Buy</button>
 </div>

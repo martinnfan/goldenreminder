@@ -1,6 +1,5 @@
-export const products = [
-        /* Necklaces: Id: 1-7
-         Earrings: Id: 8-13 */
+export const necklaces = [
+        /* Necklaces: Id: 1-7 */
       { id: 1, 
         name: "Handmade and Customizable Circle Pendant Necklace, 18k Gold-Filled · Personalized Gift", 
         price: 42, 

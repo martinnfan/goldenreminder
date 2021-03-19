@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { products } from './necklaces';
+import { necklaces } from './necklaces';
 import { item } from './item';
 
 @Component({
@@ -15,7 +15,7 @@ export class ProductsComponent implements OnInit {
   itSelected:Number;
   modifiedtext:string;
 
-  products = products;
+  necklaces = necklaces;
 
   constructor(private route: ActivatedRoute) { }
 
@@ -32,7 +32,7 @@ export class ProductsComponent implements OnInit {
     this.modifiedtext="You have selected " + val;
   }
 
-  tableData = this.products.reduce((acc, col, i) => {
+  tableData = this.necklaces.reduce((acc, col, i) => {
     if (i % 2 == 0) {
         acc.push({column1: col});
     } else {
