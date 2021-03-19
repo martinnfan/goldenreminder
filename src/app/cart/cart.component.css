@@ -7,6 +7,21 @@ img {
     float: left;
 }
 
+.center {
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  text-align: center;
+}
+
 body {
     background-image: url("../../assets/images/toronto_bg_cropped.jpg");
     background-color: #cccccc;
@@ -21,9 +36,10 @@ body {
     width: 100%;
     min-width: 400px;
     max-width: 450px;
-    display: flex;
+    display: inline-block;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    position: relative;
     padding: 16px 32px;
     margin-bottom: 8px;
     border-radius: 2px;

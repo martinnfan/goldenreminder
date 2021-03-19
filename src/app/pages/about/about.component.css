@@ -5,7 +5,9 @@ img {
     border-radius: 100px;
     -webkit-border-radius: 170px;
     float: left;
-
+    text-align: center;
+    margin-left: 50px;
+    justify-content: center;
   }
   
 .text {
@@ -18,4 +20,14 @@ img {
 .description {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-image: url("../../../assets/images/toronto_bg_cropped.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  border-radius: 170px;
 }
