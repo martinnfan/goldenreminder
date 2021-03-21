@@ -14,5 +14,13 @@ export class CommonComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isShown: boolean = false ; // hidden by default
+  
+  toggleShow() {
+
+    this.isShown = ! this.isShown;
+
+  }
+
 }
 
