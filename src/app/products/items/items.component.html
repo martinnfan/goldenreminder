@@ -1,12 +1,24 @@
 
-
 <div class="description" *ngIf="necklace">
+    <li type="checkbox">Back</li>
   <h2>Product Details</h2>
   
   <img [src]="necklace.image">
   <h3>{{ necklace.name }}</h3>
   <h4>{{ necklace.price | currency }}</h4>
   <p>{{ necklace.description }}</p>
+
+  <button mat-flat-button (click)="addToCart(product)">Buy</button>
+</div>
+
+<div class="description" *ngIf="earring">
+  <li type="checkbox">Back</li>
+  <h2>Product Details</h2>
+
+  <img [src]="earring.image">
+  <h3>{{ earring.name }}</h3>
+  <h4>{{ earring.price | currency }}</h4>
+  <p>{{ earring.description }}</p>
 
   <button mat-flat-button (click)="addToCart(product)">Buy</button>
 </div>

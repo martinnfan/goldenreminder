@@ -1,36 +1,16 @@
-<!--
-<div style="height: 100vh;">
-  <html>
-      <table class="container">
-        <tr class="center" *ngFor="let product of tableData">
-          <td>         
-            <button class="center" [routerLink]="['/items', product.column1.id]">
-              <img [src]="product.column1.image">
-              <div class="text">
-                {{ product.column1.name }}
-              </div>
-            </button>
-          </td>
-          <td>
-            <button class="center" [routerLink]="['/items', product.column2.id]">
-              <img [src]="product.column2.image">
-              <div class="text">
-                {{ product.column2.name }}
-              </div>
-            </button>
-          </td>
-        </tr>
-      </table>
-      
-    </html>
-  </div>
-  -->
-
-  <div class="test">
-    <li *ngIf="show" (click)="toggleEarrings()" type="checkbox">Earrings</li>
-    <li *ngIf="show" (click)="toggleNecklaces()" type="checkbox">Necklaces</li>
+  <div class="bg">
+    <div class="parent">
+      <div class="column">
+        <img src="../../assets/images/EARRINGS/Butterfly Earrings/butterfly_1.jpeg" style="width:100%">
+        <a class="btn effect01" *ngIf="show" (click)="toggleEarrings()"><span>Earrings</span></a>
+      </div>
+      <div class="column">
+        <img src="../../assets/images/NECKLACES/Circle Pendant/circle_1.jpeg" style="width:100%">
+        <a class="btn effect01" *ngIf="show" (click)="toggleNecklaces()"><span>Necklaces</span></a>
+      </div>
+    </div>
+    <input *ngIf="back" (click)="toggleBack()" type="button" value="Back">
     <div *ngIf="back" (click)="toggleBack()">
-      <li type="checkbox">Back</li>
       <div *ngIf="earring" class="row container-fluid"  id="divshow" >
         <table class="container">
           <tr class="center" *ngFor="let product of tableData_earring">

@@ -8,14 +8,13 @@
   <a href="https://www.instagram.com/goldenreminders.co/" class="fa fa-instagram"></a>
   -->
 
-  <button *ngIf="show" (click)="toggleEarrings()" type="checkbox">Earrings</button>
-  <button *ngIf="show" (click)="toggleNecklaces()" type="checkbox">Necklaces</button>
-  <div *ngIf="back" (click)="toggleBack()">
-    <button type="checkbox">Back</button>
-    <div *ngIf="earrings" class="row container-fluid"  id="divshow" >
-      earrings
+<div class="row">
+  <a class="btn effect01" *ngIf="show" (click)="toggleEarrings()"><span>Earrings</span></a>
+  <a class="btn effect01" *ngIf="show" (click)="toggleNecklaces()"><span>Necklaces</span></a>
+    <div class="column">
+    <img src="../../assets/images/EARRINGS/Butterfly Earrings/butterfly_1.jpeg" style="width:100%">
     </div>
-    <div *ngIf="necklaces" class="row container-fluid" id="divshow" >
-      necklaces
+    <div class="column">
+    <img src="../../assets/images/NECKLACES/Circle Pendant/circle_1.jpeg" style="width:100%">
     </div>
-  </div>
+</div>
