@@ -1,6 +1,6 @@
+<!--
 <div style="height: 100vh;">
-  <html class="bg">
-
+  <html>
       <table class="container">
         <tr class="center" *ngFor="let product of tableData">
           <td>         
@@ -11,11 +11,6 @@
               </div>
             </button>
           </td>
-            <!--
-            <td [title]="product.name + ' details'" [routerLink]="['/items', product.column1.id]">
-              {{product.column1.name}}<br>
-              Description: {{ product.column1.description}}
-            </td>-->
           <td>
             <button class="center" [routerLink]="['/items', product.column2.id]">
               <img [src]="product.column2.image">
@@ -24,16 +19,63 @@
               </div>
             </button>
           </td>
-          <!--
-          <td [title]="product.name + ' details'" [routerLink]="['/items', product.column2.id]">
-            {{product.column2.name}}<br>
-            Description: {{ product.column2.description}}
-          </td>-->
         </tr>
       </table>
       
-
     </html>
+  </div>
+  -->
+
+  <div class="test">
+    <li *ngIf="show" (click)="toggleEarrings()" type="checkbox">Earrings</li>
+    <li *ngIf="show" (click)="toggleNecklaces()" type="checkbox">Necklaces</li>
+    <div *ngIf="back" (click)="toggleBack()">
+      <li type="checkbox">Back</li>
+      <div *ngIf="earring" class="row container-fluid"  id="divshow" >
+        <table class="container">
+          <tr class="center" *ngFor="let product of tableData_earring">
+            <td>         
+              <button class="center" [routerLink]="['/items', product.column1.id]">
+                <img [src]="product.column1.image">
+                <div class="text">
+                  {{ product.column1.name }}
+                </div>
+              </button>
+            </td>
+            <td>
+              <button class="center" [routerLink]="['/items', product.column2.id]">
+                <img [src]="product.column2.image">
+                <div class="text">
+                  {{ product.column2.name }}
+                </div>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div *ngIf="necklace" class="row container-fluid" id="divshow" >
+        <table class="container">
+          <tr class="center" *ngFor="let product of tableData_necklace">
+            <td>         
+              <button class="center" [routerLink]="['/items', product.column1.id]">
+                <img [src]="product.column1.image">
+                <div class="text">
+                  {{ product.column1.name }}
+                </div>
+              </button>
+            </td>
+            <td>
+              <button class="center" [routerLink]="['/items', product.column2.id]">
+                <img [src]="product.column2.image">
+                <div class="text">
+                  {{ product.column2.name }}
+                </div>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </div>
 
 
@@ -70,3 +112,17 @@
       </p>
     </div>
     -->
+
+
+    <!-- Table Stuffss-->
+    <!--
+      <td [title]="product.name + ' details'" [routerLink]="['/items', product.column1.id]">
+        {{product.column1.name}}<br>
+        Description: {{ product.column1.description}}
+    </td>-->
+
+    <!--
+    <td [title]="product.name + ' details'" [routerLink]="['/items', product.column2.id]">
+      {{product.column2.name}}<br>
+      Description: {{ product.column2.description}}
+    </td>-->

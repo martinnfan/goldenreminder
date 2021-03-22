@@ -17,6 +17,7 @@ img {
   top: -30px;
 }
 
+
 .text {
   position: absolute;
   top: 205px;
@@ -66,4 +67,10 @@ body {
     text-align: center;
     justify-content: center;
     margin: auto;
+  }.button {
+    position: absolute;
+    right: 0%;
+    border: none;
+    background: none;
+    padding: 0;
   }

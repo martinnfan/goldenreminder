@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { necklaces } from './necklaces';
 import { item } from './item';
+import { earrings } from './earrings';
 
 @Component({
   selector: 'app-products',
@@ -16,19 +17,35 @@ export class ProductsComponent implements OnInit {
   modifiedtext:string;
 
   necklaces = necklaces;
+  earrings = earrings;
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
   }
 
-  isShown: boolean = false ; // hidden by default
+  show: boolean = true ;
+  back: boolean = false;
+  earring: boolean = false;
+  necklace: boolean = false;
 
+  toggleBack () {
+    this.show = ! this.show;
+    this.back = ! this.back;
+    this.necklace = false;
+    this.earring = false;
+  }
+  
+  toggleEarrings() {
+    this.earring = ! this.earring;
+    this.back = ! this.back;
+    this.show = ! this.show;
+  }
 
-  toggleShow() {
-
-    this.isShown = ! this.isShown;
-
+  toggleNecklaces() {
+    this.necklace = ! this.necklace;
+    this.back = ! this.back;
+    this.show = ! this.show;
   }
 
   onItemSelected(val:any){
@@ -41,7 +58,16 @@ export class ProductsComponent implements OnInit {
     this.modifiedtext="You have selected " + val;
   }
 
-  tableData = this.necklaces.reduce((acc, col, i) => {
+  tableData_necklace = this.necklaces.reduce((acc, col, i) => {
+    if (i % 2 == 0) {
+        acc.push({column1: col});
+    } else {
+        acc[acc.length - 1].column2 = col;
+    }       
+    return acc;
+  }, []);
+
+  tableData_earring = this.earrings.reduce((acc, col, i) => {
     if (i % 2 == 0) {
         acc.push({column1: col});
     } else {
