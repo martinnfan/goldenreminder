@@ -8,9 +8,14 @@
   <a href="https://www.instagram.com/goldenreminders.co/" class="fa fa-instagram"></a>
   -->
 
-  <button (click)="toggleShow()" type="checkbox" >show/hide</button>
-
-  <div *ngIf="isShown" class="row container-fluid"  id="divshow" >
-  Div Content
-
+  <button *ngIf="show" (click)="toggleEarrings()" type="checkbox">Earrings</button>
+  <button *ngIf="show" (click)="toggleNecklaces()" type="checkbox">Necklaces</button>
+  <div *ngIf="back" (click)="toggleBack()">
+    <button type="checkbox">Back</button>
+    <div *ngIf="earrings" class="row container-fluid"  id="divshow" >
+      earrings
+    </div>
+    <div *ngIf="necklaces" class="row container-fluid" id="divshow" >
+      necklaces
+    </div>
   </div>

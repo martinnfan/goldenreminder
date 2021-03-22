@@ -14,12 +14,28 @@ export class CommonComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  isShown: boolean = false ; // hidden by default
+  show: boolean = true ;
+  back: boolean = false;
+  earrings: boolean = false;
+  necklaces: boolean = false;
+
+  toggleBack () {
+    this.show = ! this.show;
+    this.back = ! this.back;
+    this.necklaces = false;
+    this.earrings = false;
+  }
   
-  toggleShow() {
+  toggleEarrings() {
+    this.earrings = ! this.earrings;
+    this.back = ! this.back;
+    this.show = ! this.show;
+  }
 
-    this.isShown = ! this.isShown;
-
+  toggleNecklaces() {
+    this.necklaces = ! this.necklaces;
+    this.back = ! this.back;
+    this.show = ! this.show;
   }
 
 }
