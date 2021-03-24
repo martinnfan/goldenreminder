@@ -13,8 +13,12 @@ import { ThankyouComponent } from './pages/thankyou/thankyou.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'cart', component: CartComponent },
-  { path: 'products', component: ProductsComponent },
-  { path: "items/:productId", component: ItemsComponent },
+  { path: 'products', component: ProductsComponent, 
+    children: [
+        { path: "items/:productId", component: ItemsComponent, }
+      ]  
+    },
+  //{ path: "items/:productId", component: ItemsComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactUsComponent },
   { path: 'common', component: CommonComponent },
@@ -23,7 +27,8 @@ const routes: Routes = [
 
 // configures NgModule imports and exports
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),
+            RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
