@@ -1,16 +1,17 @@
 
-<div class="description" *ngIf="necklace">
+<div class="description" *ngIf="product">
     <li type="checkbox">Back</li>
   <h2>Product Details</h2>
   
-  <img [src]="necklace.image">
-  <h3>{{ necklace.name }}</h3>
-  <h4>{{ necklace.price | currency }}</h4>
-  <p>{{ necklace.description }}</p>
+  <img [src]="product.image">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency }}</h4>
+  <p>{{ product.description }}</p>
 
   <button mat-flat-button (click)="addToCart(product)">Buy</button>
 </div>
 
+<!--
 <div class="description" *ngIf="earring">
   <li type="checkbox">Back</li>
   <h2>Product Details</h2>
@@ -22,3 +23,4 @@
 
   <button mat-flat-button (click)="addToCart(product)">Buy</button>
 </div>
+-->

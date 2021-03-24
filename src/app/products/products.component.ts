@@ -60,9 +60,9 @@ export class ProductsComponent implements OnInit {
 
   tableData_necklace = this.necklaces.reduce((acc, col, i) => {
     if (i % 2 == 0) {
-        acc.push({column1: col});
+        acc.push({col1: col});
     } else {
-        acc[acc.length - 1].column2 = col;
+        acc[acc.length - 1].col2 = col;
     }       
     return acc;
   }, []);

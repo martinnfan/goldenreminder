@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { necklaces } from '../necklaces';
 import { earrings } from '../earrings';
+import { products } from '../products'
 import { CartService } from "../../models/cart.service";
 
 @Component({
@@ -13,6 +14,7 @@ import { CartService } from "../../models/cart.service";
 export class ItemsComponent implements OnInit {
   earring;
   necklace;
+  product;
   constructor(
     private route: ActivatedRoute,
     private cartService: CartService
@@ -26,6 +28,7 @@ export class ItemsComponent implements OnInit {
     // Find the product that correspond with the id provided in route.
     this.necklace = necklaces.find(product => product.id === productIdFromRoute);
     this.earring = earrings.find(product => product.id === productIdFromRoute);
+    this.product = products.find(product => product.id === productIdFromRoute);
   }
 
   addToCart(product) {

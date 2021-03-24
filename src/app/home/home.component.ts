@@ -32,4 +32,9 @@ export class HomeComponent implements OnInit {
 
   @ViewChild('slideshow') slideshow: any;
 
+  @ViewChild('videoPlayer') videoplayer: any;
+  toggleVideo(event: any) {
+    this.videoplayer.nativeElement.play();
+  }
+
 }

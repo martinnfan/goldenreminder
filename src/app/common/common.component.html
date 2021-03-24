@@ -7,14 +7,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <a href="https://www.instagram.com/goldenreminders.co/" class="fa fa-instagram"></a>
   -->
+<div class="bg">
+  <div class="container">
+    <div *ngFor="let product of products">
 
-<div class="row">
-  <a class="btn effect01" *ngIf="show" (click)="toggleEarrings()"><span>Earrings</span></a>
-  <a class="btn effect01" *ngIf="show" (click)="toggleNecklaces()"><span>Necklaces</span></a>
-    <div class="column">
-    <img src="../../assets/images/EARRINGS/Butterfly Earrings/butterfly_1.jpeg" style="width:100%">
+      <button class="center" [routerLink]="['/items', product.id]">
+        <img [src]="product.image">
+        <div class="text">
+          {{ product.name }}
+        </div>
+      </button>
     </div>
-    <div class="column">
-    <img src="../../assets/images/NECKLACES/Circle Pendant/circle_1.jpeg" style="width:100%">
-    </div>
+  </div>
 </div>
