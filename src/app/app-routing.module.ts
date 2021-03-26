@@ -11,6 +11,7 @@ import { ItemsComponent } from './products/items/items.component';
 import { ThankyouComponent } from './pages/thankyou/thankyou.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'cart', component: CartComponent },
   { path: 'products', component: ProductsComponent }, 
