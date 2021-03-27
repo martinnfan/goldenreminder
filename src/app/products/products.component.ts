@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { necklaces } from './necklaces';
 import { item } from './item';
 import { earrings } from './earrings';
+import { products } from './products';
 
 @Component({
   selector: 'app-products',
@@ -18,6 +19,7 @@ export class ProductsComponent implements OnInit {
 
   necklaces = necklaces;
   earrings = earrings;
+  products = products;
 
   constructor(private route: ActivatedRoute) { }
 
@@ -75,5 +77,6 @@ export class ProductsComponent implements OnInit {
     }       
     return acc;
   }, []);
+
 
 }

@@ -1,4 +1,17 @@
   <div class="bg">
+    <div class="container">
+      <div *ngFor="let product of products">
+  
+        <button class="center" [routerLink]="['/items', product.id]">
+          <img [src]="product.image">
+          <div class="text">
+            {{ product.name }}
+          </div>
+        </button>
+      </div>
+    </div>     
+  </div>
+    <!--
     <div class="parent">
         <a class="btn effect01" *ngIf="show" (click)="toggleEarrings()"><span>Earrings</span></a>
         
@@ -51,7 +64,7 @@
         </table>
       </div>
     </div>
-  </div>
+    -->
 
 
 <!-- These are past test codes, Use them if necessary!-->

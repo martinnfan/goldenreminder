@@ -1,6 +1,6 @@
 
 <div class="description" *ngIf="product">
-    <li type="checkbox">Back</li>
+    <a routerLink="/products"><span>Back</span></a>
   <h2>Product Details</h2>
   
   <img [src]="product.image">
@@ -10,17 +10,3 @@
 
   <button mat-flat-button (click)="addToCart(product)">Buy</button>
 </div>
-
-<!--
-<div class="description" *ngIf="earring">
-  <li type="checkbox">Back</li>
-  <h2>Product Details</h2>
-
-  <img [src]="earring.image">
-  <h3>{{ earring.name }}</h3>
-  <h4>{{ earring.price | currency }}</h4>
-  <p>{{ earring.description }}</p>
-
-  <button mat-flat-button (click)="addToCart(product)">Buy</button>
-</div>
--->

@@ -38,8 +38,10 @@ body {
 .center {
   position: relative;
   display: flex;
-  margin:auto;
+  margin: auto;
   border: none;
+  margin-bottom: 100px;
+  margin-left: 100px;
 }
 
 .text {

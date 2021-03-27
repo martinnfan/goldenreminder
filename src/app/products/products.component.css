@@ -14,7 +14,6 @@ img {
   -webkit-border-radius: 170px;
   float: left;
   position: relative;
-  top: -30px;
 }
 
 
@@ -71,17 +70,20 @@ body {
   .center {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: auto;
-    padding-top: 30px;
+    border: none;
+    margin-bottom: 100px;
+    margin-left: 100px;
   }
 
   .container {
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
+    width: 90%;
+    list-style-type: none;
+    margin: 0.5em;
+    padding: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }.button {
     position: absolute;
     right: 0%;
