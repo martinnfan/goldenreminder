@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { earrings } from '../products/earrings';
-import { necklaces } from '../products/necklaces';
 import { products } from '../products/products';
 
 @Component({
