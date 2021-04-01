@@ -16,18 +16,19 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { CommonComponent } from './common/common.component';
-
-// Extras
-import { ErrorComponent } from './error/error.component'; 
-import { SlideshowModule } from 'ng-simple-slideshow';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { NgImageSliderModule } from 'ng-image-slider';
 import { TopBarComponent } from './shared/top-bar/top-bar.component';
 import { BottomBarComponent } from './shared/bottom-bar/bottom-bar.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemsComponent } from './pages/products/items/items.component';
 import { ThankyouComponent } from './pages/thankyou/thankyou.component';
+import { CartPopupComponent } from './pages/cart/cart-popup/cart-popup.component';
+
+// Extras
+import { ErrorComponent } from './error/error.component'; 
+import { SlideshowModule } from 'ng-simple-slideshow';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { ThankyouComponent } from './pages/thankyou/thankyou.component';
     AboutComponent,
     ItemsComponent,
     ThankyouComponent,
+    CartPopupComponent,
 
     //AppRoutingModule
   ],

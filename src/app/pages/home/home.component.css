@@ -35,7 +35,7 @@ video{
 /* Landscaped photo */
 .landscape1 {
   height:50%;
-  background-image: url("../../../assets/images/toronto_bg_cropped.jpg");
+  background-image: url("../../../assets/images/landscape/pic1.jpeg");
   background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
