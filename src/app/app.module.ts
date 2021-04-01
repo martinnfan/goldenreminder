@@ -22,7 +22,6 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemsComponent } from './pages/products/items/items.component';
 import { ThankyouComponent } from './pages/thankyou/thankyou.component';
-import { CartPopupComponent } from './pages/cart/cart-popup/cart-popup.component';
 
 // Extras
 import { ErrorComponent } from './error/error.component'; 
@@ -44,7 +43,6 @@ import { NgImageSliderModule } from 'ng-image-slider';
     AboutComponent,
     ItemsComponent,
     ThankyouComponent,
-    CartPopupComponent,
 
     //AppRoutingModule
   ],

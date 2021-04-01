@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { CartService } from '../../models/cart.service';
+import { contactform } from './contact-form';
 
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
@@ -48,6 +49,21 @@ export class CartComponent implements OnInit {
       console.log("The dialog was closed");
       this.email = result;
     })
+  }
+}
+
+@Component({
+  selector: 'cartpopup-overview-example',
+  templateUrl: 'contact-form.html',
+})
+export class cartpopupcomponent {
+
+  constructor(
+    public dialogRef: MatDialogRef<cartpopupcomponent>,
+    @Inject(MAT_DIALOG_DATA) public data: contactform) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
   }
 
 }
