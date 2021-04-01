@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { CartService } from '../models/cart.service';
+import { CartService } from '../../models/cart.service';
 
 @Component({
   selector: 'app-cart',

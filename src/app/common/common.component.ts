@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { products } from '../products/products';
+import { products } from '../pages/products/products';
 
 @Component({
   selector: 'app-common',
@@ -18,4 +18,3 @@ export class CommonComponent implements OnInit {
   }
 
 }
-

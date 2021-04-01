@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CartComponent } from './cart/cart.component';
+import { CartComponent } from './pages/cart/cart.component';
 import { CommonComponent } from './common/common.component';
 import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ProductsComponent } from './products/products.component';
+import { ProductsComponent } from './pages/products/products.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
-import { ItemsComponent } from './products/items/items.component';
+import { ItemsComponent } from './pages/products/items/items.component';
 import { ThankyouComponent } from './pages/thankyou/thankyou.component';
 
 const routes: Routes = [

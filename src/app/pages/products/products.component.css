@@ -47,7 +47,7 @@ a {
 
 
 body {
-    background-image: url("../../assets/images/toronto_bg_cropped.jpg");
+    background-image: url("../../../assets/images/toronto_bg_cropped.jpg");
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@ body {
 
   .bg{
     height: 100%;
-    background-image: url("../../assets/images/toronto_bg_cropped.jpg");
+    background-image: url("../../../assets/images/toronto_bg_cropped.jpg");
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;

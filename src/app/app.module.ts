@@ -12,9 +12,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Components
 import { MaterialModule } from './material.module';
-import { HomeComponent } from './home/home.component';
-import { ProductsComponent } from './products/products.component';
-import { CartComponent } from './cart/cart.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { CartComponent } from './pages/cart/cart.component';
 import { CommonComponent } from './common/common.component';
 
 // Extras
@@ -26,7 +26,7 @@ import { TopBarComponent } from './shared/top-bar/top-bar.component';
 import { BottomBarComponent } from './shared/bottom-bar/bottom-bar.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { AboutComponent } from './pages/about/about.component';
-import { ItemsComponent } from './products/items/items.component';
+import { ItemsComponent } from './pages/products/items/items.component';
 import { ThankyouComponent } from './pages/thankyou/thankyou.component';
 
 @NgModule({
