@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { CartService } from '../../models/cart.service';
 import { contactform } from './contact-form';
 
@@ -12,14 +12,11 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog
 })
 export class CartComponent implements OnInit {
   items = this.cartService.getItems();
+  public contactform: FormGroup;
 
   name: string;
-  email: string;
-
-  checkoutForm = this.formBuilder.group({
-    name: "",
-    address: ""
-  });
+  phone: number;
+  address: string;
 
   constructor(
     private cartService: CartService,
@@ -28,35 +25,41 @@ export class CartComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
+    this.contactform = this.formBuilder.group({
+      name:[''],
+      phone:[''],
+      address:[''],
+    })
 
   }
 
   onSubmit(): void {
     this.items = this.cartService.clearCart();
-    console.warn("Your order has been submitted", this.checkoutForm.value);
+    console.warn("Your order has been submitted", this.contactform.value);
     
-    this.checkoutForm.reset();
+    this.contactform.reset();
   }
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(CartComponent, {
-      width: '250px',
+    const dialogRef = this.dialog.open(cartpopupcomponent, {
+      width: '750px',
       data: {name: this.name,
-             email: this.email}
+             phone: this.phone,
+             address: this.address}
     });
     
     dialogRef.afterClosed().subscribe(result => {
       console.log("The dialog was closed");
-      this.email = result;
     })
   }
 }
 
 @Component({
-  selector: 'cartpopup-overview-example',
-  templateUrl: 'contact-form.html',
+  selector: 'app-cart-contact',
+  templateUrl: './contact-form.html',
+  styleUrls: ['./cart.component.css']
 })
-export class cartpopupcomponent {
+export class cartpopupcomponent implements OnInit{
 
   constructor(
     public dialogRef: MatDialogRef<cartpopupcomponent>,
@@ -64,6 +67,10 @@ export class cartpopupcomponent {
 
   onNoClick(): void {
     this.dialogRef.close();
+  }
+
+  ngOnInit(): void {
+
   }
 
 }

@@ -1,4 +1,6 @@
 export interface contactform {
     name: string;
-    email: string;
+    address: string;
+    phone: number;
+
 }

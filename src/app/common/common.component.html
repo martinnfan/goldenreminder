@@ -7,16 +7,3 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <a href="https://www.instagram.com/goldenreminders.co/" class="fa fa-instagram"></a>
   -->
-<div class="bg">
-  <div class="container">
-    <div *ngFor="let product of products">
-
-      <button class="center" [routerLink]="['/items', product.id]">
-        <img [src]="product.image">
-        <div class="text">
-          {{ product.name }}
-        </div>
-      </button>
-    </div>
-  </div>
-</div>

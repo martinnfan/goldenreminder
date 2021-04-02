@@ -1,33 +1,32 @@
 <div class="center" style="height: 100vh;">  
 
-      <div class="cart-item" *ngFor="let item of items">
-        <span>{{ item.name }} </span>
-        <span>{{ item.price | currency }}</span>
-      </div>
-      
-      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+  <div class="cart-item" *ngFor="let item of items">
+    <span>{{ item.name }} </span>
+    <span>{{ item.price | currency }}</span>
+  </div>
 
-        <div>
-          <label for="name">
-            Name
-          </label>
-          <input id="name" type="text" formControlName="name">
-        </div>
-      
-        <div>
-          <label for="address">
-            Address
-          </label>
-          <input id="address" type="text" formControlName="address">
-        </div>
-      
-        <div class="send">
-          <button mat-flat-button type="submit">Purchase</button>
-        </div>
-
-      </form>
-
-      
-
+  <form [formGroup]="contactform" (ngSubmit)="onSubmit()">
+    <div>
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="name">
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>Phone Number</mat-label>
+        <input matInput [(ngModel)]="phone">
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>Address</mat-label>
+        <input matInput [(ngModel)]="address">
+      </mat-form-field>
+    </div>
+    <div class="send">
+      <button mat-raised-button (click)="openDialog()" type="submit">Purchase</button>
+    </div>
+  </form>
 
   </div>  

@@ -7,6 +7,14 @@ img {
     float: left;
 }
 
+.contactform {
+  align-self: center;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .center {
   align-items: center;
   justify-content: center;
