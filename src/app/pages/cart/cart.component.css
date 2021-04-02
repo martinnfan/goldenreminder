@@ -44,9 +44,10 @@ body {
     width: 100%;
     min-width: 400px;
     max-width: 450px;
-    display: inline-block;
-    flex-direction: column;
-    justify-content: center;
+    display: flex;
+    align-items: left;
+    justify-content: right;
+    align-self: center;
     position: relative;
     padding: 16px 32px;
     margin-bottom: 8px;

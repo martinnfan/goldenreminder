@@ -10,8 +10,6 @@ import { CartService } from "../../../models/cart.service";
   styleUrls: ['./items.component.css']
 })
 export class ItemsComponent implements OnInit {
-  earring;
-  necklace;
   product;
   constructor(
     private route: ActivatedRoute,
@@ -29,7 +27,7 @@ export class ItemsComponent implements OnInit {
 
   addToCart(product) {
     this.cartService.addToCart(product);
-    window.alert("Your product has been added to the cart!");
+    //window.alert("Your product has been added to the cart!");
     console.log(product);
   }
 

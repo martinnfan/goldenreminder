@@ -1,9 +1,12 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+
+import { products } from '../products/products';
 import { CartService } from '../../models/cart.service';
 import { contactform } from './contact-form';
 
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
@@ -14,19 +17,24 @@ export class CartComponent implements OnInit {
   items = this.cartService.getItems();
   public contactform: FormGroup;
 
+  product;
   name: string;
   phone: number;
   address: string;
 
   constructor(
+    private route: ActivatedRoute,
     private cartService: CartService,
-    private formBuilder: FormBuilder,
     public dialog: MatDialog,
     ) { }
 
   //Click on Submit
   onSubmit(): void {
     this.items = this.cartService.clearCart();
+  }
+
+  onRemove(): void {
+    this.cartService.removeFromCart();
   }
 
   // This is for the popup module
@@ -46,7 +54,11 @@ export class CartComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    const routeParams = this.route.snapshot.paramMap;
+    const productIdFromRoute = Number(routeParams.get("productId"));
 
+    // Find the product that correspond with the id provided in route.
+    this.product = products.find(product => product.id === productIdFromRoute);
   }
 }
 

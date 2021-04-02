@@ -3,9 +3,10 @@
   <div class="cart-item" *ngFor="let item of items">
     <span>{{ item.name }} </span>
     <span>{{ item.price | currency }}</span>
+    <button (click)="onRemove()">Remove</button>
   </div>
 
-  <div (ngSubmit)="onSubmit()">
+  <div>
     <div>
       <mat-form-field>
         <mat-label>Name</mat-label>
@@ -25,7 +26,7 @@
       </mat-form-field>
     </div>
     <div class="send">
-      <button mat-raised-button (click)="openDialog()" type="submit">Purchase</button>
+      <button mat-raised-button (click)="openDialog()">Purchase</button>
     </div>
   </div>
 

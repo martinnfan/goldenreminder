@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
+import { products } from "../pages/products/products";
 
 @Injectable({
   providedIn: "root"
@@ -21,6 +22,10 @@ export class CartService {
 
   getItems() {
     return this.items;
+  }
+
+  removeFromCart() {
+    this.items.pop();
   }
 
   clearCart() {
