@@ -2,7 +2,7 @@
     <div class="container">
       <div *ngFor="let product of products">
   
-        <button class="center" [routerLink]="['/items', product.id]">
+        <button class="center" [routerLink]="['/items', product.title]">
           <img [src]="product.image">
           <div class="text">
             {{ product.name }}

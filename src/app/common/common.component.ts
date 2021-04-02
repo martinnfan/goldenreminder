@@ -1,4 +1,5 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { products } from '../pages/products/products';
 
 @Component({
   selector: 'app-common',
@@ -7,6 +8,9 @@ import { Component, Inject, OnInit } from '@angular/core';
 })
 export class CommonComponent implements OnInit {
 
+  products = products;
+
+  // Instantiation
 
   constructor() { }
 

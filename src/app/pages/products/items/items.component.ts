@@ -19,10 +19,12 @@ export class ItemsComponent implements OnInit {
   ngOnInit() {
     // First get the product id from the current route.
     const routeParams = this.route.snapshot.paramMap;
-    const productIdFromRoute = Number(routeParams.get("productId"));
+    //const productIdFromRoute = Number(routeParams.get("productId"));
+    const productTitleFromRoute = String(routeParams.get("productTitle"));
 
     // Find the product that correspond with the id provided in route.
-    this.product = products.find(product => product.id === productIdFromRoute);
+    this.product = products.find(product => product.title === productTitleFromRoute);
+    //this.product = products.find(product => product.id === productIdFromRoute);
   }
 
   addToCart(product) {

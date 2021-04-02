@@ -1,7 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
-import { products } from '../products/products';
 import { CartService } from '../../models/cart.service';
 import { contactform } from './contact-form';
 
@@ -17,7 +16,6 @@ export class CartComponent implements OnInit {
   items = this.cartService.getItems();
   public contactform: FormGroup;
 
-  product;
   name: string;
   phone: number;
   address: string;
@@ -54,11 +52,7 @@ export class CartComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const routeParams = this.route.snapshot.paramMap;
-    const productIdFromRoute = Number(routeParams.get("productId"));
-
-    // Find the product that correspond with the id provided in route.
-    this.product = products.find(product => product.id === productIdFromRoute);
+    
   }
 }
 
