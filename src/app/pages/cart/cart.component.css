@@ -45,7 +45,7 @@ body {
     min-width: 400px;
     max-width: 450px;
     display: inline-block;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     position: relative;
     padding: 16px 32px;

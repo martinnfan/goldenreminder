@@ -5,7 +5,7 @@
     <span>{{ item.price | currency }}</span>
   </div>
 
-  <form [formGroup]="contactform" (ngSubmit)="onSubmit()">
+  <div (ngSubmit)="onSubmit()">
     <div>
       <mat-form-field>
         <mat-label>Name</mat-label>
@@ -27,6 +27,11 @@
     <div class="send">
       <button mat-raised-button (click)="openDialog()" type="submit">Purchase</button>
     </div>
-  </form>
+  </div>
+
+  <!--  
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+    
+  </form>-->
 
   </div>  
