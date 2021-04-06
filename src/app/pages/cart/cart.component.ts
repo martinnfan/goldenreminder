@@ -59,6 +59,7 @@ export class CartComponent implements OnInit {
 @Component({
   selector: 'app-cart-contact',
   templateUrl: './contact-form.html',
+  styleUrls: ['./cart.component.css']
 })
 export class cartpopupcomponent implements OnInit{
 

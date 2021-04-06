@@ -16,6 +16,12 @@ export class ItemsComponent implements OnInit {
     private cartService: CartService,
   ) {}
 
+  text = "hello";
+
+  onPress() {
+    this.text = "no way"
+  }
+
   ngOnInit() {
     // First get the product id from the current route.
     const routeParams = this.route.snapshot.paramMap;

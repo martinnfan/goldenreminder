@@ -1,9 +1,17 @@
-<h1>Hello {{data.name}},<br>
+<h2>Hello {{data.name}},</h2>
+<h1>
     Thank you for ordering from Golden Reminders and supporting my small business!  It truly means a lot to me!<br>
     Please keep an eye out for future updates on your order.<br>
     Take care and stay safe!<br>
-    xo Mel
+    - xo Mel
 </h1>
+<h3>
+    Your Order Details:<br>
+    Name: {{ data.name }}<br>
+    Phone Number: {{data.phone}}<br>
+    Address: {{ data.address }}<br>
+</h3>
+
 <div mat-dialog-actions>
     <button mat-button (click)="onNoClick()">Ok</button>
   </div>

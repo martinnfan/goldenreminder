@@ -14,6 +14,11 @@ img {
 h1 {
   font-family: 'Times New Roman', Times, serif;
 }
+h2 {
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
 
 .center {
   align-items: center;
