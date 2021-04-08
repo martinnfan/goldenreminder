@@ -17,7 +17,7 @@ export class ItemsComponent implements OnInit {
   ) {}
 
   // These are parameters for engravings
-  engravings = "product.id===1 || product.id===2 || product.id===3 || product.id===4";
+  engravings = "product.id===1 || product.id===2 || product.id===3 || product.id===4 || product.id===5";
   checked = false;
   personalization: string;
 

@@ -16,3 +16,7 @@ img {
     margin-right:auto;
     display: block;
 }
+
+p {
+  position: relative;
+}
