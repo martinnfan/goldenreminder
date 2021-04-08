@@ -5,4 +5,5 @@ export class item
     public Price:Number;
     public Description:string;
     public Image: string;
+    public Engraving: string;
 }
