@@ -8,9 +8,14 @@
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
 
-  <div *ngIf="product.id===1">
-    {{ text }}
-    <mat-checkbox (click)="onPress()">Test</mat-checkbox>
+  <div *ngIf="engravings">
+    <mat-checkbox [(ngModel)]="checked">Add your personalisation (optional)</mat-checkbox>
+    <div *ngIf="checked">
+      <mat-form-field>
+        <mat-label>Personalization</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </div>
   </div>
 
   <button mat-flat-button (click)="addToCart(product)">Add to Cart</button>

@@ -16,11 +16,8 @@ export class ItemsComponent implements OnInit {
     private cartService: CartService,
   ) {}
 
-  text = "hello";
-
-  onPress() {
-    this.text = "no way"
-  }
+  engravings = "product.id===1 || product.id===2 || product.id===3 || product.id===4";
+  checked = false;
 
   ngOnInit() {
     // First get the product id from the current route.
