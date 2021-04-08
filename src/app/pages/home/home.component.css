@@ -10,6 +10,10 @@ h1 {
   height: 130vh;
 }
 
+.mat-grid-list {
+  height: 400px;
+}
+
 /* Bottom Photo */
 img {
   width: 350px;

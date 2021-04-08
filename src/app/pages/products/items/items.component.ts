@@ -20,6 +20,7 @@ export class ItemsComponent implements OnInit {
   engravings = "product.id===1 || product.id===2 || product.id===3 || product.id===4 || product.id===5";
   checked = false;
   personalization: string;
+  cart = false;
 
   ngOnInit() {
     // First get the product id from the current route.
@@ -33,6 +34,7 @@ export class ItemsComponent implements OnInit {
   }
 
   addToCart(product) {
+    this.cart = true;
     this.product.engraving = this.personalization;
     this.cartService.addToCart(product);
     //window.alert("Your product has been added to the cart!");

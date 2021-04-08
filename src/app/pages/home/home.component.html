@@ -1,39 +1,44 @@
 <div class="home">  
-    <body>
+  <body>
 
-      <div class="landscape1">
-        <a routerLink="/products" class="btn effect01"><span>Shop Now</span></a>
-      </div>
+    <div class="landscape1">
+      <a routerLink="/products" class="btn effect01"><span>Shop Now</span></a>
+    </div>
       
-      <div>
-        <!-- Slider: https://stackblitz.com/edit/ng-image-slider-demo
-        <div class="slideShow">
-          <ng-image-slider #nav
-            [images]="imageObject"
-            [infinite]="true"
-            [autoSlide]="1"
-            [imageSize]="{width: '25%', height: 300}"
-            slideImage="1">
-          </ng-image-slider>
-        </div>-->
+    <div>
+      <!-- Slider: https://stackblitz.com/edit/ng-image-slider-demo 
+      <div class="slideShow">
+        <ng-image-slider #nav
+          [images]="imageObject"
+          [infinite]="true"
+          [autoSlide]="1"
+          [imageSize]="{width: '25%', height: 300}"
+          slideImage="1">
+        </ng-image-slider>
+      </div> -->
 
-        <div>
-          <h2>
-            <br>Welcome to Golden Reminders Co!<br><br>
-          </h2>
-          <h3>
-            This small business was created with the mission of producing sentimental & customizable pieces to remind people that their stories matter. In fact, it's something worth celebrating! Each piece is handmade in Toronto Ontario. 
-            <br>
-            Spread some love this pandemic and gift the perfect piece for yourself and your loved ones! Thank you for your support and please message me if you have any questions.
-            <br>
-            Follow our social media pages for the latest news:<br>
-            IG: @goldenreminders.co 
-          </h3>
-        </div>
-        <br>
-        <video class="video" src="../../assets/vid.mp4" controls width="600">
-        </video>
+      <div>
+        <h2>
+          <br>Welcome to Golden Reminders Co!<br><br>
+        </h2>
+        <h3>
+          This small business was created with the mission of producing sentimental & customizable pieces to remind people that their stories matter. In fact, it's something worth celebrating! Each piece is handmade in Toronto Ontario. 
+          <br>
+          Spread some love this pandemic and gift the perfect piece for yourself and your loved ones! Thank you for your support and please message me if you have any questions.
+          <br>
+          Follow our social media pages for the latest news:<br>
+          IG: @goldenreminders.co 
+        </h3>
+        <mat-grid-list [cols]="breakpoint" (window:resize)="onResize($event)" class="grid-list" rowHeight="fit">
+          <mat-grid-tile>
+            <video class="video" src="../../assets/vid.mp4" controls width="100%"></video>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <video class="video" src="../../assets/vid2.m4v" controls width="100%"></video>
+          </mat-grid-tile>
+        </mat-grid-list>
       </div>
-    </body>
+    </div>
+  </body>
   
   </div>

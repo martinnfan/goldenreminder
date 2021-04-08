@@ -6,6 +6,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  breakpoint;
 
   constructor() { }
 
@@ -27,7 +28,12 @@ export class HomeComponent implements OnInit {
       title: "Pic5"},
   ];
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.breakpoint = (window.innerWidth <= 400) ? 1:2;
+  }
+
+  onResize(event) {
+    this.breakpoint = (event.target.innerWidth <= 400) ? 1:2;
   }
 
   @ViewChild('slideshow') slideshow: any;
