@@ -1,7 +1,15 @@
-  <div class="bg">
+<div class="bg">
     <div class="container">
+
+      <form [formGroup]="form" (ngSubmit)="submit()">
+        <label formArrayName="orders" *ngFor="let order of ordersFormArray.controls; let i = index">
+          <input type="checkbox" [formControlName]="i">
+          {{options[i].name}}
+        </label>
+        <button>submit</button>
+      </form>
+
       <div *ngFor="let product of products">
-  
         <button class="center" [routerLink]="['/items', product.title]">
           <img [src]="product.image">
           <div class="text">
@@ -9,14 +17,15 @@
           </div>
         </button>
       </div>
-    </div>     
+
+    </div>
   </div>
 
 <!-- These are past test codes, Use them if necessary!-->
     <!--
     <div class="parent">
         <a class="btn effect01" *ngIf="show" (click)="toggleEarrings()"><span>Earrings</span></a>
-        
+
         <a class="btn effect01" *ngIf="show" (click)="toggleNecklaces()"><span>Necklaces</span></a>
     </div>
     <input aria-label="Back" *ngIf="back" (click)="toggleBack()" type="button" value="Back">
@@ -24,7 +33,7 @@
       <div *ngIf="earring" class="row container-fluid"  id="divshow" >
         <table class="container">
           <tr class="center" *ngFor="let product of tableData_earring">
-            <td>         
+            <td>
               <button class="center" [routerLink]="['/items', product.column1.id]">
                 <img [src]="product.column1.image">
                 <div class="text">
@@ -46,7 +55,7 @@
       <div *ngIf="necklace" class="row container-fluid" id="divshow" >
         <table class="container">
           <tr class="center" *ngFor="let product of tableData_necklace">
-            <td>         
+            <td>
               <button class="center" [routerLink]="['/items', product.col1.id]">
                 <img [src]="product.col1.image">
                 <div class="text">
@@ -86,7 +95,7 @@
     <!--
     <div class="container" *ngFor="let product of products">
 
-      FIX CSS BEFORE UNCOMMENTING 
+      FIX CSS BEFORE UNCOMMENTING
       <button class="center" [routerLink]="['/items', product.id]">
         <img [src]="product.image">
       </button>
