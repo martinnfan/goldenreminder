@@ -13,40 +13,25 @@ export class ProductsComponent implements OnInit {
   products = products;
 
   // Instatiate form variables
+  test = false;
   form: FormGroup;
   options = [
     { id: 1, name: 'Earrings' },
     { id: 2, name: 'Necklaces' },
   ];
-
-  get ordersFormArray() {
-    return this.form.controls.orders as FormArray;
-  }
+  necklaces = "product.id===1 || product.id===2 || product.id===3 || product.id===4 || product.id===5 || product.id===6 || product.id===7";
+  earrings = "product.id===10 || product.id===11 || product.id===12 || product.id===13 || product.id===14 || product.id===15 || product.id===16";
 
   constructor(
     private route: ActivatedRoute,
     private formBuilder: FormBuilder
-    ) {
-      this.form = this.formBuilder.group({
-        orders: new FormArray([])
-      });
-
-      this.addCheckboxes();
-     }
-
-  private addCheckboxes() {
-    this.options.forEach(() => this.ordersFormArray.push(new FormControl(false)));
+    ){
   }
+
 
   ngOnInit(): void {
   }
 
-  submit() {
-    const selectedOrdersIds = this.form.value.orders
-      .map((checked, i) => checked ? this.options[i].id : null)
-      .filter(v => v!== null);
-    console.log(selectedOrdersIds);
-  }
 
 
 }

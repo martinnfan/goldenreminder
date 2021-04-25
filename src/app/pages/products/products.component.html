@@ -1,20 +1,12 @@
 <div class="bg">
     <div class="container">
 
-      <form [formGroup]="form" (ngSubmit)="submit()">
-        <label formArrayName="orders" *ngFor="let order of ordersFormArray.controls; let i = index">
-          <input type="checkbox" [formControlName]="i">
-          {{options[i].name}}
-        </label>
-        <button>submit</button>
-      </form>
-
       <div *ngFor="let product of products">
         <button class="center" [routerLink]="['/items', product.title]">
           <img [src]="product.image">
-          <div class="text">
-            {{ product.name }}
-          </div>
+            <div class="text">
+              {{ product.name }}
+            </div>
         </button>
       </div>
 
